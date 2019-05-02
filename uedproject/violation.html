@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="author" content="rahul">
+
+  <!-- Bootstrap required meta tags-->
+  <meta charset="UTF8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Link to CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/rahul.css">
+
+  <title>rahul</title>
+
+</head>
+
+<body class="bgimg" >
+    <div class="container">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+   
+          
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+              <img src="./images/police.png" alt="Flowers in Chania" width=200>
+
+            </li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        <li class="nav-item ">
+          <a class="nav-link" href="parkingPurchase.html">Parking Purchase  <span class="sr-only">(current)</span></a>
+        </li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        <li class="nav-item">
+          <a class="nav-link" href="violation.html">Check For Violation?</a>
+        </li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        <li class="nav-item">
+          <a class="nav-link " href="complaint.html">Report a Complaint </a>
+        </li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+
+      </ul>
+
+      
+          <a class="nav-link"  href="index.html">Logout</a>
+        
+
+    
+      </form>
+    </div>
+  </nav>
+  <h2>Parking Violations </h2>
+ <p> 1.	Parking in a handicap reserved space	$100 </p>
+ <p> 2.	Parking by a fire hydrant or in a fire lane	$50</p>
+ <p> 3.	Parking on grass	$50 </p>
+ <p> 4.	Removing, altering, or destroying a parking control device (plus cost of repairs)	$50 </p>
+ <p> 5.	Parking in a loading zone (red lines or curbs)	$30 </p>
+ 
+<div class = "row">
+
+<div class = "col-md-3">
+<h5>Enter your license plate number to check for violations:</h5>
+</div>
+<div class = "col-md-">
+    <input type="text" placeholder="license number" id = "ex" style="width: 300px;"  onsearch="empty()" >
+    <button style="align-items: center"type="button" onclick = "showDiv1()"class="btn btn-primary btn-lg">Search</button>
+      
+      
+    </div>
+ </div>
+ <style>
+      body{
+        padding-top: 75px;
+      }
+      
+      .search-container{
+        width: 490px;
+        display: block;
+        margin: 0 auto;
+      }
+      
+      input#search-bar{
+        margin: 0 auto;
+        width: 100%;
+        height: 45px;
+        padding: 0 20px;
+        font-size: 1rem;
+        border: 1px solid #D0CFCE;
+        outline: none;
+        &:focus{
+          border: 1px solid #008ABF;
+          transition: 0.35s ease;
+          color: #008ABF;
+          &::-webkit-input-placeholder{
+            transition: opacity 0.45s ease; 
+            opacity: 0;
+           }
+          &::-moz-placeholder {
+            transition: opacity 0.45s ease; 
+            opacity: 0;
+           }
+          &:-ms-placeholder {
+           transition: opacity 0.45s ease; 
+           opacity: 0;
+           }    
+         }
+       }
+      
+      .search-icon{
+        position: relative;
+        float: right;
+        width: 75px;
+        height: 75px;
+        top: -62px;
+        right: -45px;
+      }
+      
+  
+ </style>
+     
+      
+      
+      
+     <div   id="content" style = " border: 1px solid black;
+     background-color:grey;
+     padding-top: 50px;
+     padding-right: 30px;
+     padding-bottom: 50px;
+     padding-left: 80px;">
+<h5>License Number: 34W200 MobileNumber: 6608543223 Violation: Illegal Parking Fine:40$ </h5>
+<a href="parking.html"><button style="align-items: center"type="button" class="btn btn-primary btn-lg">Pay</button> </a>
+   
+     
+    </div>
+    <style>
+      #content {
+display: none;
+}
+    </style>
+    <script>
+      function showDiv1(){
+        if (document.getElementById("ex").value == ""){
+        alert("enter a value ");
+        return false ; 
+        }
+document.getElementById("content").style.display = 'block';
+}
+function empty(){
+  if (document.getElementById("ex").value == ""){
+        alert("enter a value ");
+        return false; 
+        }
+}
+    </script>
