@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="author" content="rahul">
+
+  <!-- Bootstrap required meta tags-->
+  <meta charset="UTF8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Link to CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+
+	<link rel="stylesheet" href="./css/rahul.css">
+	<link rel="stylesheet" href="./css/main.css">
+
+  <title>rahul</title>
+
+</head>
+
+<body class="bgimg" >
+    <div class="container">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+   
+          
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <img src="./images/police.png" alt="Flowers in Chania" width=200>
+
+            </li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        <li class="nav-item">
+          <a class="nav-link " href="about.html">AboutUs!</a>
+        </li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+
+      </ul>
+
+      
+      </form>
+    </div>
+	</nav>
+	<body>
+			<div class="login">
+				<form>
+					<h2>Login</h2>
+					<input type="text" name="username" id="username" placeholder="username" required><br><br><br>
+					<input type="password" name="password" id="password" placeholder="password" required><br><br>
+				<input type="button" value="Login" onclick="validate()"><br><br><br>
+					<div id="container">
+						<a href="#">Reset Password</a>
+						<a href="#">Forgot Password?</a>
+					</div>
+					<br><br><br><br><br>
+					Don't have account?<a href="#">&nbsp;Sign Up</a>
+				</form>
+			</div>
+		</body>
+		<script>
+			function validate(){
+			var username=document.getElementById("username").value ;
+			var password = document.getElementById("password").value ; 
+			if (username == "bearcat" && password == "bearcat"){
+				
+				window.location="user.html" ;
+				return false ;
+			}
+			else if  (username == "admin" && password == "admin") {
+				window.location="admin.html" ;
+				return false ;
+			}
+			else {
+				alert ("login failed") ;
+			}
+		}
+		</script>
+	</body>
+	</html>

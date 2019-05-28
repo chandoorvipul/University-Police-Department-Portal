@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="author" content="rahul">
+
+  <!-- Bootstrap required meta tags-->
+  <meta charset="UTF8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Link to CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/rahul.css">
+
+  <title>rahul</title>
+
+</head>
+
+<body class="bgimg" >
+    <div class="container">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+   
+          
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <img src="./images/police.png" alt="Flowers in Chania" width=200>
+
+            </li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+            <li class="nav-item active">
+                    <a class="nav-link" href="parkingPurchase.html">Parking Purchase  <span class="sr-only">(current)</span></a>
+                  </li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                  <li class="nav-item">
+                    <a class="nav-link" href="violation.html">Check For Violation?</a>
+                  </li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                  <li class="nav-item ">
+                    <a class="nav-link " href="complaint.html">Report a Complaint </a>
+                  </li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+
+      </ul>
+
+      
+          <a class="nav-link"  href="index.html">Logout</a>
+        
+
+       
+    
+      </form>
+    </div>
+  </nav>
+  <br/>
+  <br/>
+  <br/>
+
+<div class = row >
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="parkingPermit()">Parking Permit</button>
+  <button style="width:25%" onclick="visitor()">Visitor Parking</button>
+  <button style="width:25%"><a href="https://www.nwmissouri.edu/map/parking.htm" style="color:white;">Parking map</a></button> <br/>
+  <button style="width:25%" ><a href="parking.html" style="color:white;"> Buy a Parking Spot</a></button>
+  </div>
+</div>
+
+<div class = row >
+<p></p>
+</div>
+  <p id="parkingPermit"></p> <br>
+</div>
+<style>
+        .btn-group button {
+          background-color: #4CAF50; /* Green background */
+          border: 1px solid green; /* Green border */
+          color: white; /* White text */
+          padding: 10px 24px; /* Some padding */
+          cursor: pointer; /* Pointer/hand icon */
+          float: left; /* Float the buttons side by side */
+        }
+        
+        /* Clear floats (clearfix hack) */
+        .btn-group:after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .btn-group button:not(:last-child) {
+          border-right: none; /* Prevent double borders */
+        }
+        
+        /* Add a background color on hover */
+        .btn-group button:hover {
+          background-color: #3e8e41;
+        }
+        </style>
+        <script>
+            function parkingPermit(){
+                document.getElementById("parkingPermit").innerHTML = "<b>Parking Permit</b> <br/> Students and Faculty/Staff must now register their vehicle online via CatPaws before picking up their permit at the Administration building, Student Services Desk. Forest Village Apartment permits and motorcycle/scooter permits are also available to register online and pick up at the Administration building. <br/> Permit costs are as follows: <br> <br> <br> <b>Semester Permit was Purchased</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>Fall </b> &nbsp&nbsp&nbsp&nbsp	<b>Spring</b> &nbsp&nbsp&nbsp&nbsp	<b>Summer</b> <br> <br> Student Sticker &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	90.00 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	70.00 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	50.00 <br><br>Student Hangtag &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	115.00 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	95.00 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	75.00 <br><br> Faculty/Staff Sticker &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	90.00 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	70.00 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	50.00 "
+            }
+            
+        </script>
+        <script>
+            function visitor(){
+                document.getElementById("parkingPermit").innerHTML = "<h1>Visitor and Temporary Parking </h1> <h2>Visitors Parking On Campus </h2> We welcome all visitors to campus and request that all faculty, staff and students who are receiving guests on campus please make arrangements to obtain a free Visitor parking pass for your guest(s) before they arrive on campus. Guests are defined as anyone who is not a current student, faculty or staff. Visitor permits are available:in person at University Police (open 24/7) via email by contacting University Police at police@nwmissouri.edu.Prospective students and their family can obtain a Visitor permit at the Mabel Cook Admissions Building.There is directional signage on campus to assist with locating the above buildings."
+            }
+        </script>
